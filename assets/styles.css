@@ -1,0 +1,90 @@
+div.paper {
+	border-radius: 5px;
+	width: 182px;
+	height: 243px;
+	border: 2px solid #000;
+	background-color: transparent;
+	margin: 5px;
+	position: relative;
+	overflow: hidden;
+	display: none;
+}
+
+div.deck {
+	display: flex;
+}
+
+div#control {
+	display: none;
+}
+
+.t1 {
+	background-image: url(images/1.png);
+	width: 33px;
+	height: 45px;
+}
+
+.t2 {
+	background-image: url(images/2.png);
+	width: 43px;
+	height: 44px;
+}
+
+.t3 {
+	background-image: url(images/3.png);
+	width: 42px;
+	height: 42px;
+}
+
+.t4 {
+	background-image: url(images/4.png);
+	width: 43px;
+	height: 63px;
+}
+
+div.img {
+	width: 182px;
+	height: 243px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.king-1 {
+	background-image: url(images/1-king.jpg);
+}
+.king-2 {
+	background-image: url(images/2-king.jpg);
+}
+.king-3 {
+	background-image: url(images/3-king.jpg);
+}
+.king-4 {
+	background-image: url(images/4-king.jpg);
+}
+.queen-1 {
+	background-image: url(images/1-queen.jpg);
+}
+.queen-2 {
+	background-image: url(images/2-queen.jpg);
+}
+.queen-3 {
+	background-image: url(images/3-queen.jpg);
+}
+.queen-4 {
+	background-image: url(images/4-queen.jpg);
+}
+.jack-1 {
+	background-image: url(images/1-jack.jpg);
+}
+.jack-2 {
+	background-image: url(images/2-jack.jpg);
+}
+.jack-3 {
+	background-image: url(images/3-jack.jpg);
+}
+.jack-4 {
+	background-image: url(images/4-jack.jpg);
+}
