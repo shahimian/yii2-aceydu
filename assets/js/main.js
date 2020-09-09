@@ -4,8 +4,11 @@ var yourmoney = 100;
 var ignore = 0;
 
 function gamePlay(){
-	$("#paper-2").hide();
-	$("#paper-1, #paper-3, #bet-btn, #pass").show();
+	$("#paper-1, #paper-2, #paper-3, #bet-btn, #pass").show();
+	$("#paper-2").addClass("back");
+	$("#paper-1").css("transform", "rotateZ("+( Math.floor(Math.random() * 6) + 357 )+"deg)");
+	$("#paper-2").css("transform", "rotateZ("+( Math.floor(Math.random() * 6) + 357 )+"deg)");
+	$("#paper-3").css("transform", "rotateZ("+( Math.floor(Math.random() * 6) + 357 )+"deg)");
 	$(".img").removeClass().addClass("img");
 	$(".paper > div:first-child").removeClass(["t1", "t2", "t3", "t4"]);
 	$("#paper-2 .num").text("");
@@ -63,7 +66,7 @@ $("#bet-btn").click(function(e){
 		yourmoney -= bet;
 	}
 	$("#charge span").text(yourmoney);
-	$("#paper-2").show();
+	$("#paper-2").removeClass("back");	
 	$("#paper-2 div.img").addClass(paperImg(paper(num2))+"-"+type2);
 	$("#paper-2 .type").addClass("t" + type2);
 	$("#paper-2 .num").text(paper(num2));
