@@ -24,8 +24,14 @@ Assets::register($this);
 	</div>
 </div>
 
+<div id="msg">
+	<div></div>
+	<button>OK</button>
+</div>
+
+
 <div id="control">
 	<div id="charge"><span>0</span>$</div>
 	<div id="ignore">Ignore: <span></span></div>
-	<input value="" type="number" id="bet"/>$<button id="bet-btn">Bet!</button><button id="pass">Pass</button>
+	<input value="2" type="number" id="bet"/>$<button id="bet-btn">Bet!</button><button id="pass">Pass</button>
 </div>

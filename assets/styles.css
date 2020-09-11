@@ -46,6 +46,10 @@ div#control {
     width: 580px;
 }
 
+.num {
+    margin-left: 10px;
+}
+
 .t1 {
 	background-image: url(images/1.png);
 	width: 33px;
@@ -115,4 +119,15 @@ div.img {
 }
 .jack-4 {
 	background-image: url(images/4-jack.jpg);
+}
+div#msg {
+	display: none;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	border: 2px solid #202040;
+	z-index: 1;
+	position: flex;
+	width: 200px;
+	font-size: 15px;
+	color: white;
 }
